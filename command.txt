@@ -1,9 +1,33 @@
 Good Evening.
-May i know who is this?.
-I am lux-mi your car companian.
-Is it what could u do?.
-I can share the car details with u.
-oh,Could u tell me left front tire pressure.
+User 1 : May i know who is this?.
+User 2 : Who are you?.
+
+Car Answer 1 : I am lux-mi your car companian.
+Car Answer 2 : Different answer.
+
+User 1: Wow. What you can do
+Car Answer 1 : List my services fuel suggestions, journeys, service date, tyre pressure, car driving mode check, music playlist.
+User 2: Wow. So what you have for me
+Car Answer 2 : List my services in a different way.
+
+User 1: Wow! that's great.
+Car Answer : Thank you, according to my analysis this is the time you go to office. What's your opinion?
+User 1: Yes 
+Car Answer : You have set me a remainder to remaind the items like your id card, wallet and lunch bag
+User 1: Thank you very much 
+Car Answer: With plessure 
+
+User 2: Amazing! Let's start driving.
+Car Answer : Thank you, according to my analysis this is the time you leave office. What's your opinion?
+User 2: That's right so what you are trying to tell me.
+Car Answer : I just want to remind you the about the fuel level, your fuel can go upto this so you have to refill your fuel tank
+
+
+Car Answer 2: You have set me a remainder to remaind the items like your id card, wallet and lunch bag
+
+Wow. What could u do?.
+I can share the car details with you.
+oh, Could u tell me left front tire pressure.
 The tire pressure is normal.
 What could u do other than this?.
 I can share with a car history and i will alert u.

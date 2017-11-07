@@ -5,6 +5,7 @@ var app = express();
 var apiai = require('apiai');
 var apiAiApp = apiai("b944f4dfae0c4420980b542056e4c1b2");
 var userName = ""
+var userSive = "Siva"
 
 // MARK:- Body
 var bodyParser = require('body-parser');
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.get('/', function (req, res) {
    res.send('Hello World');
 })
+
 
 // Post Call
 app.post('/speak', function(req, res) {
@@ -27,19 +29,22 @@ app.post('/speak', function(req, res) {
 
    request.on('response', function(response) {
       var speech = response.result.fulfillment.speech
-      var pattern = /sir/ig;
-      answer = speech.replace( pattern, userName );
-
-     var result = {
-        result: answer
-      } 
-
-     res.send(result);
+      if (speech === "Payload Content") {
+        var result = {
+            result: response.result.fulfillment.messages[1].payload[userName]
+        } 
+      } else {
+        var pattern = /sir/ig;
+        answer = speech.replace( pattern, userName );
+        var result = {
+            result: answer
+        } 
+    }
+      res.send(result);
     });
     request.on('error', function(error) {
         console.log(error);
     });
-
    request.end();
 });
 
